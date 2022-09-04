@@ -1,0 +1,99 @@
+extends c
+
+# conditionals
+snippet if "if"
+if(${1:cond}){
+	${0:code}
+}
+endsnippet
+
+snippet if_else "if else"
+if(${1:cond}){
+	${0:}
+} else {
+	${0:}
+}
+endsnippet
+
+snippet if_elif_else "if elif else"
+if(${1:c1}){
+	${0:}
+} else if(${2:c2}) {
+	${0:}
+} else {
+	${0:}
+}
+endsnippet
+
+# cycles
+snippet for "for"
+for(${1:var}; ${2:c}; ${3:inc}){
+	${0:}
+}
+endsnippet
+
+snippet while "while"
+while(${1:c}){
+	${0:}
+}
+endsnippet
+
+# function
+snippet fun "function"
+${1:ret} ${2:fun_name}(${3:args}){
+	${0:}
+}
+endsnippet
+
+# struct
+snippet struct "struct basic"
+typedef struct ${1:struct_name} {
+	${2:attrs}
+
+	${3:const}(${4:args}) {}
+} ${5:struct_name};
+endsnippet
+
+# data structures
+snippet vector "vector"
+vector<${1:T}> ${0:}
+endsnippet
+
+snippet stack "stack"
+stack<${1:T}> ${0:}
+endsnippet
+
+snippet queue "queue"
+queue<${1:T}> ${0:}
+endsnippet
+
+snippet map "map"
+map<${1:T}, ${2:T}> ${0:}
+endsnippet
+
+snippet set "set"
+set<${1:T}> ${0:}
+endsnippet
+
+snippet priority_queue "priority_queue"
+priority_queue<${1:T}> ${0:}
+endsnippet
+
+# initial setup c++ files
+snippet main "main"
+#include <iostream>
+using namespace std;
+
+int main(){
+	return 0;
+}
+endsnippet
+
+snippet progcomp "progcomp"
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(){
+	return 0;
+}
+endsnippet
