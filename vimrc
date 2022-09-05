@@ -2,6 +2,7 @@ set nocompatible
 filetype plugin on
 syntax on
 
+set backspace=indent,eol,start
 set belloff=all
 set tabstop=2 softtabstop=2
 set shiftwidth=2
