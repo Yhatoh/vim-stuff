@@ -22,6 +22,7 @@ set wildmode=list:longest
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 set cursorline
 set cursorcolumn
+set termwinsize=10x0
 
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
@@ -90,6 +91,7 @@ nnoremap <leader>t gt<CR>
 nnoremap <leader>T gT<CR>
 nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 30<CR>
 nnoremap <leader>ps :Rg<SPACE>
+nnoremap <leader>tr :wa<CR>:blowright term ++kill=term<CR>
 nnoremap <silent> <leader>= :vertical resize +5<CR>
 nnoremap <silent> <leader>- :vertical resize -5<CR>
 
