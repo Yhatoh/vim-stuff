@@ -91,7 +91,7 @@ nnoremap <leader>t gt<CR>
 nnoremap <leader>T gT<CR>
 nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 30<CR>
 nnoremap <leader>ps :Rg<SPACE>
-nnoremap <leader>tr :wa<CR>:blowright term ++kill=term<CR>
+nnoremap <leader>tr :wa<CR>:belowright term ++kill=term<CR>
 nnoremap <silent> <leader>= :vertical resize +5<CR>
 nnoremap <silent> <leader>- :vertical resize -5<CR>
 
