@@ -91,7 +91,15 @@ nnoremap <leader>t gt<CR>
 nnoremap <leader>T gT<CR>
 nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 30<CR>
 nnoremap <leader>ps :Rg<SPACE>
+
+" open terminal below your current window  
 nnoremap <leader>tr :wa<CR>:belowright term ++kill=term<CR>
+
+" some fast run or compilation commands                                         
+nnoremap <expr> <leader><leader>p ':w<cr><c-w><c-j>python ' . expand('%:p') . '<cr><c-w><c-k>'
+nnoremap <expr> <leader><leader>cp ':w<cr><c-w><c-j>g++ ' . expand('%:p') . ' -o out; ./out <cr><c-w><c-k>'
+nnoremap <expr> <leader><leader>cc ':w<cr><c-w><c-j>gcc ' . expand('%:p') . ' -o out; ./out <cr><c-w><c-k>' 
+ 
 nnoremap <silent> <leader>= :vertical resize +5<CR>
 nnoremap <silent> <leader>- :vertical resize -5<CR>
 
