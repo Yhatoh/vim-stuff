@@ -44,6 +44,8 @@ Plug 'mg979/vim-visual-multi'
 Plug 'SirVer/ultisnips'
 Plug 'vimwiki/vimwiki'
 Plug 'uiiaoo/java-syntax.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
 
