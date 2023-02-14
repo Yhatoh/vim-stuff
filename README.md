@@ -33,5 +33,6 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 * ['vimwiki/vimwiki'](https://github.com/vimwiki/vimwiki)
 * ['vim-utils/vim-man'](https://github.com/vim-utils/vim-man)
 * ['ycm-core/YouCompleteMe'](https://github.com/ycm-core/YouCompleteMe)
+* [sheerun/vim-polyglot](https://github.com/sheerun/vim-polyglot)
 
 
