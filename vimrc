@@ -43,6 +43,8 @@ Plug 'vim-utils/vim-man'
 Plug 'sheerun/vim-polyglot'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+"Plug 'junegunn/rainbow_parentheses.vim'
+Plug 'dbarsam/vim-rainbow-parentheses'
 
 call plug#end()
 
@@ -54,6 +56,11 @@ if executable('rg')
 endif
 
 let g:ctrlp_user_command=['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+
+let g:rainbow_activate = 1
+"autocmd VimEnter * RainbowParentheses
+"let g:rainbow#max_level = 32
+"let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{', '}']]
 
 let mapleader=" "
 let g:netrw_browse_split=2
