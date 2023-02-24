@@ -25,6 +25,9 @@ set encoding=utf-8 " Necessary to show Unicode glyphs
 
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
+" you need this to prevent to use polyglot autoindent
+let g:polyglot_disabled = ["autoindent"]
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'jremmen/vim-ripgrep'
